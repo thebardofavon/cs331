@@ -266,7 +266,7 @@ const QuickViewDialog = ({ open, onClose, product }) => {
               </Typography>
               
               <Typography variant="h5" color="text.primary" sx={{ mt: 2, mb: 0.5, fontWeight: 500 }}>
-                ${product.price.toFixed(2)}
+                ₹{product.price.toFixed(2)}
               </Typography>
               {product.oldPrice && (
                 <Typography 
@@ -274,7 +274,7 @@ const QuickViewDialog = ({ open, onClose, product }) => {
                   color="text.secondary" 
                   sx={{ textDecoration: "line-through", mb: 2 }}
                 >
-                  ${product.oldPrice.toFixed(2)}
+                  ₹{product.oldPrice.toFixed(2)}
                 </Typography>
               )}
               <Typography variant="body2" color="text.secondary" sx={{ mb: 4, mt: 2, lineHeight: 1.7 }}>
@@ -674,7 +674,7 @@ const ProductCatalog = () => {
       newActiveFilters.push({ 
         type: "price", 
         value: priceRange, 
-        label: `Price: $${priceRange[0]} - $${priceRange[1]}` 
+        label: `Price: ₹${priceRange[0]} - ₹${priceRange[1]}` 
       });
     }
     
@@ -1353,7 +1353,7 @@ const ProductCatalog = () => {
                                 color="text.primary"
                                 sx={{ fontWeight: 600 }}
                               >
-                                ${product.price.toFixed(2)}
+                                ₹{product.price.toFixed(2)}
                                 {product.oldPrice && (
                                   <Typography
                                     component="span"
@@ -1361,7 +1361,7 @@ const ProductCatalog = () => {
                                     color="text.secondary"
                                     sx={{ textDecoration: "line-through", ml: 1 }}
                                   >
-                                    ${product.oldPrice.toFixed(2)}
+                                    ₹{product.oldPrice.toFixed(2)}
                                   </Typography>
                                 )}
                               </Typography>
@@ -1447,7 +1447,7 @@ const ProductCatalog = () => {
                                     color="text.primary"
                                     sx={{ fontWeight: 600 }}
                                   >
-                                    ${product.price.toFixed(2)}
+                                    ₹{product.price.toFixed(2)}
                                     {product.oldPrice && (
                                       <Typography
                                         component="span"
@@ -1455,7 +1455,7 @@ const ProductCatalog = () => {
                                         color="text.secondary"
                                         sx={{ textDecoration: "line-through", ml: 1 }}
                                       >
-                                        ${product.oldPrice.toFixed(2)}
+                                        ₹{product.oldPrice.toFixed(2)}
                                       </Typography>
                                     )}
                                   </Typography>
